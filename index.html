@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Martin Kimathi — Portfolio</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <!-- ── NAVBAR ── -->
+  <nav class="topnav" id="navbar">
+    <div class="logo">Martin Kimathi</div>
+    <div class="nav-links">
+      <a href="#home">Home</a>
+      <a href="#about">About</a>
+      <a href="#skills">Skills</a>
+      <a href="#services">Services</a>
+      <a href="#contact">Contact</a>
+    </div>
+    <div class="hamburger" id="hamburger" aria-label="Open menu">
+      <span></span><span></span><span></span>
+    </div>
+  </nav>
+
+  <!-- Mobile Menu -->
+  <div class="mobile-menu" id="mobileMenu">
+    <a href="#home"     onclick="closeMenu()">Home</a>
+    <a href="#about"    onclick="closeMenu()">About</a>
+    <a href="#skills"   onclick="closeMenu()">Skills</a>
+    <a href="#services" onclick="closeMenu()">Services</a>
+    <a href="#contact"  onclick="closeMenu()">Contact</a>
+  </div>
+
+  <!-- ── HERO ── -->
+  <section class="hero-section" id="home">
+    <div class="hero-inner">
+      <div class="hero-text">
+        <span class="hero-tag">Available for freelance work</span>
+        <h1>Hi, I'm Martin</h1>
+        <div class="typing-wrap">
+          I do — <span class="text" id="typing"></span><span class="cursor"></span>
+        </div>
+        <p>Welcome to my portfolio. I create responsive, professional and user-friendly websites with modern technologies and best practices. Websites should not only be visually appealing but also functional and accessible to all users and devices.</p>
+        <div class="hero-cta">
+          <a href="#services" class="btn-primary">View my services</a>
+          <a href="#contact"  class="btn-outline">Get in touch</a>
+        </div>
+      </div>
+      <div class="hero-img-wrap">
+        <img class="pic" src="portflo1.jpg" alt="Martin Kimathi — official photo" />
+      </div>
+    </div>
+  </section>
+
+  <!-- ── ABOUT ── -->
+  <section class="about-section" id="about">
+    <div class="section-inner">
+      <div class="about-grid">
+        <div class="about-img zoom-img">
+          <img class="picode" src="freelance2.png" alt="Martin Kimathi — freelance certificate" />
+        </div>
+        <div class="about-content anim">
+          <p class="section-label">About me</p>
+          <h2 class="section-title">A developer where code<br/><em>meets creativity.</em></h2>
+          <p>I'm a passionate front-end developer with expertise in creating dynamic, responsive and user-friendly web applications. With a strong foundation in HTML, CSS, JavaScript and modern frameworks, I bring designs to life with clean and efficient code.</p>
+          <p>As a Graphic Designer and Full-stack Developer, I don't just build websites — I craft digital identities. With a background in Video Editing, I bring a cinematic eye to every interface I develop, ensuring your project is not only functional and fast but also visually unforgettable.</p>
+          <p>Currently studying Information Technology (Level 6) and based in Kenya, I'm committed to delivering world-class digital experiences to local and global clients.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── SKILLS ── -->
+  <section class="skills-section" id="skills">
+    <div class="section-inner">
+      <p class="section-label">Expertise</p>
+      <h2 class="section-title">My skill levels</h2>
+      <p class="section-desc">A snapshot of my technical proficiency across the key tools I use to build great digital products.</p>
+      <div class="skills-grid">
+
+        <div class="skill-item anim">
+          <div class="skill-header">
+            <span class="skill-name">HTML</span>
+            <span class="skill-pct">95%</span>
+          </div>
+          <div class="progress-container">
+            <div class="progress-bar" data-width="95%"><span>HTML</span></div>
+          </div>
+        </div>
+
+        <div class="skill-item anim">
+          <div class="skill-header">
+            <span class="skill-name">CSS</span>
+            <span class="skill-pct">85%</span>
+          </div>
+          <div class="progress-container">
+            <div class="progress-bar" data-width="85%"><span>CSS</span></div>
+          </div>
+        </div>
+
+        <div class="skill-item anim">
+          <div class="skill-header">
+            <span class="skill-name">JavaScript</span>
+            <span class="skill-pct">80%</span>
+          </div>
+          <div class="progress-container">
+            <div class="progress-bar" data-width="80%"><span>JavaScript</span></div>
+          </div>
+        </div>
+
+        <div class="skill-item anim">
+          <div class="skill-header">
+            <span class="skill-name">UI/UX Design</span>
+            <span class="skill-pct">80%</span>
+          </div>
+          <div class="progress-container">
+            <div class="progress-bar" data-width="80%"><span>UI/UX Design</span></div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ── SERVICES ── -->
+  <section class="services-section" id="services">
+    <div class="section-inner">
+      <p class="section-label">What I offer</p>
+      <h2 class="section-title">My services</h2>
+      <p class="section-desc">From concept to launch, I deliver end-to-end digital solutions tailored to your needs.</p>
+      <div class="services-grid">
+
+        <div class="service-card anim">
+          <div class="service-icon">
+            <svg viewBox="0 0 24 24"><polyline points="16 18 22 12 16 6"/><polyline points="8 6 2 12 8 18"/></svg>
+          </div>
+          <h3>Web Development</h3>
+          <p>I build responsive and interactive websites that provide seamless user experiences, optimized for performance across all devices and screen sizes.</p>
+        </div>
+
+        <div class="service-card anim">
+          <div class="service-icon">
+            <svg viewBox="0 0 24 24"><rect x="3" y="3" width="18" height="18" rx="2"/><path d="M3 9h18M9 21V9"/></svg>
+          </div>
+          <h3>UI/UX Design</h3>
+          <p>I design intuitive and engaging user interfaces, ensuring an optimal user journey and aesthetic consistency across web and mobile applications.</p>
+        </div>
+
+        <div class="service-card anim">
+          <div class="service-icon">
+            <svg viewBox="0 0 24 24"><rect x="5" y="2" width="14" height="20" rx="2"/><line x1="12" y1="18" x2="12.01" y2="18"/></svg>
+          </div>
+          <h3>App Design</h3>
+          <p>I create visually appealing and user-friendly mobile apps focused on enhancing functionality and delivering an excellent user experience.</p>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ── MODERN APP SECTION ── -->
+  <section class="app-section">
+    <div class="section-inner">
+      <div class="app-grid">
+        <img class="picode zoom-img" src="phoneimg.jpg" alt="Mobile app showcase" />
+        <div class="app-content anim">
+          <p class="section-label">Mobile development</p>
+          <h2 class="section-title">Modern App<br/><em>Development</em></h2>
+          <p>I am a Mobile App Developer focused on bridging the gap between complex technology and end-user needs. I specialize in building intuitive, high-performance applications that solve real-world problems and deliver seamless digital experiences.</p>
+          <br/>
+          <p>My goal is to transform your business requirements into functional, scalable mobile solutions that your users will love.</p>
+          <br/>
+          <a href="#contact" class="btn-primary" style="display:inline-block; margin-top:0.5rem;">Start a project</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── FOOTER / CONTACT ── -->
+  <footer id="contact">
+    <div class="footer-inner">
+      <div class="footer-grid">
+
+        <div class="footer-col">
+          <h3>Martin Kimathi</h3>
+          <p>Front-end Developer, UI/UX Designer & App Developer based in Kenya. Available for freelance and remote work.</p>
+          <div class="social-row" style="margin-top:1.25rem;">
+            <a href="https://www.tiktok.com/@martinkimathi05" target="_blank" rel="noopener">
+              <img class="social-icons" src="tik-tok.png" alt="TikTok" />
+            </a>
+            <a href="https://m.me/chaps.martin" target="_blank" rel="noopener">
+              <img class="social-icons" src="facebook.png" alt="Facebook" />
+            </a>
+            <a href="https://wa.me/254715944170" target="_blank" rel="noopener">
+              <img class="social-icons" src="whatsapp.png" alt="WhatsApp" />
+            </a>
+          </div>
+        </div>
+
+        <div class="footer-col">
+          <h3>Services</h3>
+          <ul>
+            <li>Web Development</li>
+            <li>Mobile Applications</li>
+            <li>UI/UX Design</li>
+            <li>Responsive Design</li>
+            <li>Graphic Design</li>
+            <li>Video Editing</li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h3>Reach me</h3>
+          <ul>
+            <li><a href="tel:+254715944170">+254 715 944 170</a></li>
+            <li><a href="mailto:martinkimathi896@gmail.com">martinkimathi896@gmail.com</a></li>
+          </ul>
+        </div>
+
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2026 Martin Kimathi. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ── JAVASCRIPT ── -->
+  <script>
+    /* Typing effect */
+    const words = ["Frontend Developer", "Backend Developer", "Graphics Designing", "Video Editting", "Freelancing"];
+    let wordIndex = 0, charIndex = 0, isDeleting = false;
+    const typingEl = document.getElementById("typing");
+
+    function typeEffect() {
+      const currentWord = words[wordIndex];
+      if (isDeleting) { charIndex--; } else { charIndex++; }
+      typingEl.textContent = currentWord.substring(0, charIndex);
+      let speed = isDeleting ? 50 : 100;
+      if (!isDeleting && charIndex === currentWord.length) {
+        speed = 1500; isDeleting = true;
+      } else if (isDeleting && charIndex === 0) {
+        isDeleting = false;
+        wordIndex = (wordIndex + 1) % words.length;
+        speed = 500;
+      }
+      setTimeout(typeEffect, speed);
+    }
+    typeEffect();
+
+    /* Navbar scroll effect */
+    window.addEventListener("scroll", function () {
+      const navbar = document.getElementById("navbar");
+      navbar.classList.toggle("scrolled", window.scrollY > 60);
+    });
+
+    /* Hamburger menu */
+    const hamburger = document.getElementById("hamburger");
+    const mobileMenu = document.getElementById("mobileMenu");
+
+    hamburger.addEventListener("click", function () {
+      hamburger.classList.toggle("open");
+      mobileMenu.classList.toggle("open");
+    });
+
+    function closeMenu() {
+      hamburger.classList.remove("open");
+      mobileMenu.classList.remove("open");
+    }
+
+    /* Intersection observer — fade-in + skill bars */
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add("show");
+
+          /* Animate progress bars when visible */
+          if (entry.target.classList.contains("skill-item")) {
+            const bar = entry.target.querySelector(".progress-bar");
+            if (bar) {
+              const targetWidth = bar.getAttribute("data-width");
+              setTimeout(() => { bar.style.width = targetWidth; }, 200);
+            }
+          }
+        } else {
+          entry.target.classList.remove("show");
+          /* Reset progress bar */
+          if (entry.target.classList.contains("skill-item")) {
+            const bar = entry.target.querySelector(".progress-bar");
+            if (bar) bar.style.width = "0";
+          }
+        }
+      });
+    }, { threshold: 0.25 });
+
+    document.querySelectorAll(".anim, .zoom-img, .skill-item").forEach(el => {
+      observer.observe(el);
+    });
+  </script>
+
+</body>
+</html>
