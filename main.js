@@ -1,3 +1,19 @@
+// ── PAGE LOADER ──
+document.addEventListener("DOMContentLoaded", function() {
+
+  const loader = document.getElementById("page-loader");
+
+  // Force hide after 3 seconds no matter what
+  setTimeout(function() {
+    if (loader) {
+      loader.classList.add("loader-hidden");
+      setTimeout(function() {
+        loader.style.display = "none";
+      }, 500);
+    }
+  }, 800);
+
+});
 
     /* typing effect*/
     const words = ["Frontend Developer", "Backend Developer", "Graphics Designing", "Video Editting", "Freelancing"];
